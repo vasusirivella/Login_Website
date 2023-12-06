@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Login Page</title>
+<style>
+body {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+	margin: 0;
+}
+
+.form {
+	font-style: oblique;
+	border: 5px double black;
+	height: 15cm;
+	width: 10cm;
+	background-color: bisque;
+}
+
+div {
+	text-align: center;
+}
+
+input[type="text"] {
+	font-size: 18px;
+	width: 200px;
+}
+
+h1, label {
+	color: black;
+}
+
+img {
+	padding-top: 1cm;
+	height: 3cm;
+	width: 3cm;
+	height: 3cm;
+}
+</style>
+</head>
+
+<body>
+	<div class="form">
+		<form action="NewServlet" method="post">
+			<div>
+				<div>
+					<img src="logo.jpg" alt="not found">
+					<h1>Login</h1>
+				</div>
+				<div>
+					<label for="tbgmail">Email Id:</label><br> <input type="email"
+						id="tbgmail" name="gmailid" required="required"><br>
+					<br> <label for="tbpass">Password:</label><br> <input
+						type="password" id="tbpass" name="password" required="required"><br>
+					<br>
+				</div>
+				<div>
+					<input type="submit" value="Login" id="tbsubmit"><br>
+					<br>
+				</div>
+			</div>
+		</form>
+		<div>
+			<a href="register.html"><button>Register</button></a>
+		</div>
+	</div>
+
+</body>
+
+</html>

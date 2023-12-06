@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Information Page</title>
+<style>
+body {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+	margin: 0;
+}
+
+.form {
+	background-color: bisque;
+	font-style: oblique;
+	border: 5px double black;
+	height: 17cm;
+	width: 99%;
+	color: black;
+}
+
+img {
+	padding-top: 1cm;
+	height: 3cm;
+	width: 3cm;
+}
+
+.start, h3 {
+	text-align: center;
+}
+
+label {
+	padding-left: 1cm;
+	padding-right: 0.2cm;
+}
+
+input {
+	border: 2px solid #000;
+}
+</style>
+<body>
+	<div class="form">
+		<form action="InfoServlet" method="post">
+			<div class="start">
+				<img
+					src="logo.jpg"
+					alt="not found">
+				<h1>Employee Information</h1>
+			</div>
+			<div>
+				<table>
+					<tr>
+						<label for="tbname1"><b>First Name:</b></label>
+						<input type="text" id="tbname1" name="tbname1" required="required">
+						<label for="tbname2"><b>Last Name:</b></label>
+						<input type="text" id="tbname2" name="tbname2" required="required">
+						<label for="tbdesc"><b>Profile Description:</b></label>
+						<input type="text" id="tbdesc" name="tbdesc" required="required">
+						<label for="tbdate"><b>Date of Birth:</b></label>
+						<input type="date" id="tbdate" name="tbdate" required="required">
+					</tr>
+					<br>
+					<br>
+					<tr>
+						<label for="tbgender"><b>Gender:</b></label>
+						<input type="radio" id="tbgender" name="tbgender"
+							required="required">
+						<b>Male</b>
+						<input type="radio" id="tbgender" name="tbgender"
+							required="required">
+						<b>Female</b>
+						<input type="radio" id="tbgender" name="tbgender"
+							required="required">
+						<b>Other</b>
+						<label for="tbnum"><b>Phone Number:</b></label>
+						<input type="text" id="tbnum" name="tbnum" required="required">
+						<label for="tbmail"><b>Email Id:</b></label>
+						<input type="email" id="tbmail" name="tbmail" required="required">
+						<label for="tbdrno"><b>Address:- D No:</b></label>
+						<input type="text" id="tbdrno" name="tbdrno" required="required">
+					</tr>
+					<br>
+					<br>
+					<tr>
+						<label for="tbstr"><b>Street:</b></label>
+						<input type="text" id="tbstr" name="tbstr" required="required">
+						<label for="tbcity"><b>City:</b></label>
+						</td>
+						<input type="text" id="tbcity" name="tbcity" required="required">
+						<label for="tbstate"><b>State:</b></label>
+						<input type="text" id="tbstate" name="tbstate" required="required">
+						<label for="tbzip"><b>Pincode:</b></label>
+						<input type="text" id="tbzip" name="tbzip" required="required">
+					</tr>
+					<tr>
+						<label for="tbcou"><b>Country:</b></label>
+						<input type="text" id="tbcou" name="tbcou" required="required"><br><br>
+						<label for="tbimg"><b>Your Photo:</b></label>
+						<input type="file" multiple>
+					</tr>
+				</table>
+				<table align="center" border=1 cellspacing=0>
+					<tr>
+						<h3>Eductaion:</h3>
+					</tr>
+					<tr>
+						<th><b>Course</b></th>
+						<th><b>University</b></th>
+						<th><b>PassOut Year</b></th>
+						<th><b>Percentage</b></th>
+					</tr>
+					<tr>
+						<td><input type="text" required="required"></td>
+						<td><input type="text" required="required"></td>
+						<td><input type="text" required="required"></td>
+						<td><input type="text" required="required"></td>
+					</tr>
+					<tr>
+						<td><input type="text" required="required"></td>
+						<td><input type="text" required="required"></td>
+						<td><input type="text" required="required"></td>
+						<td><input type="text" required="required"></td>
+					</tr>
+				</table>
+			</div>
+			<div align="center">
+				<br>
+				<input type="submit" value="Submit" name="submit">
+			</div>
+		</form>
+		<div align="center">
+			<br>
+			<a href="Front.html"><button>Login</button></a>
+		</div>
+	</div>
+
+</body>
+
+</html>
